@@ -10,7 +10,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        renderscriptTargetApi 21
+        renderscriptTargetApi 18
         renderscriptSupportModeEnabled true
     }
     buildTypes {
@@ -19,6 +19,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets { main { renderscript.srcDirs = ['src'] } }
 }
 
 dependencies {
@@ -34,6 +35,5 @@ dependencies {
     compile 'io.reactivex:rxjava:1.1.6'
     compile 'top.zibin:Luban:1.0.9'
     compile project(path: ':library')
-
 
 }
