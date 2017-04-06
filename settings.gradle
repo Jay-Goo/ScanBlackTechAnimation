@@ -1,1 +1,1 @@
-include ':app', ':ScanBlackTechLibrary'
+include ':app', ':library'
