@@ -1,39 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="jaygoo.com.demo.MainActivity">
-    <LinearLayout
-        android:id="@+id/firstView"
-        android:orientation="vertical"
+    tools:context="animation.jaygoo.com.blackdemo.MainActivity">
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:textSize="20sp"
-                  android:layout_margin="15dp"
-                  android:layout_gravity="center|top"
-                  android:textColor="@android:color/black"
-                  android:text="智课批改,Cool ~"/>
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:textSize="16sp"
-                  android:layout_margin="20dp"
-                  android:layout_gravity="center"
-                  android:textColor="@android:color/black"
-                  android:text="@string/demo"/>
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:text="点击选择图片"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/demo_word"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"/>
+
 
     <FrameLayout
-        android:id="@+id/fragment_container"
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-        android:background="@android:color/transparent"
-    >
+                 android:layout_height="match_parent">
 
     </FrameLayout>
 
